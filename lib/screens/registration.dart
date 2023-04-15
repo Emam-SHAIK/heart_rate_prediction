@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:heart_rate_prediction/constant.dart';
 import 'package:heart_rate_prediction/screens/bluetooth.dart';
-import 'package:heart_rate_prediction/screens/main_page.dart';
 import 'package:intl/intl.dart';
 import 'package:heart_rate_prediction/data/data.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -32,8 +31,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
     prefs.setBool('hasPreviousAttack', _hasPreviousAttack);
     prefs.setStringList('emergencyContactsName', _emergencyContactsName);
     prefs.setStringList('emergencyContactsNumber', _emergencyContactsNumber);
-    // prefs.setStringList('emergencyContacts',
-    //     _emergencyContacts.map((e) => json.encode(e)).toList());
   }
 
   @override

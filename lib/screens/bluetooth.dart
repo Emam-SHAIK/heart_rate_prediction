@@ -5,7 +5,6 @@ import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:heart_rate_prediction/constant.dart';
 import 'package:heart_rate_prediction/screens/details.dart';
-import 'package:heart_rate_prediction/screens/main_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:twilio_flutter/twilio_flutter.dart';
 import '../components/reusable_card.dart';
@@ -477,21 +476,6 @@ class _BluetoothScreenState extends State<BluetoothScreen> {
                     ],
                   ),
                 ),
-                // BottomButton(
-                //   buttonTitle: 'CALCULATE',
-                //   onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) => ResultsPage(
-                //       bmiResult: calc.calculateBMI(),
-                //       resultText: calc.getResult(),
-                //       interpretation: calc.getInterpretation(),
-                //     ),
-                //   ),
-                // );
-                // },
-                // ),
               ],
             ),
           )

@@ -3,12 +3,10 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:heart_rate_prediction/screens/bluetooth.dart';
-import 'package:heart_rate_prediction/screens/message_page.dart';
 import 'package:heart_rate_prediction/screens/registration.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:twilio_flutter/twilio_flutter.dart';
 import 'package:heart_rate_prediction/constant.dart';
-import 'package:heart_rate_prediction/screens/main_page.dart';
 Future main() async{
   await dotenv.load(fileName: ".env");
   runApp(const MyApp());

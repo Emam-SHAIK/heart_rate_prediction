@@ -39,8 +39,6 @@ class _DetailsPageState extends State<DetailsPage> {
         prefs.getStringList('emergencyContactsName') ?? [];
     List<String> emergencyContactsNumber =
         prefs.getStringList('emergencyContactsNumber') ?? [];
-    // EmergencyContact emergencyContacts =
-    //     encodedContacts.map((e) => EmergencyContact.fromJson(json.decode(e))).toList()[0];
 
     setState(() {
       this.data = Data1(
